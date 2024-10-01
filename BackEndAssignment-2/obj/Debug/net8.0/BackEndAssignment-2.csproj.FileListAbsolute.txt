@@ -30,3 +30,4 @@ C:\Users\HIMANSHU\source\repos\BackEndAssignment-2\BackEndAssignment-2\obj\Debug
 C:\Users\HIMANSHU\source\repos\BackEndAssignment-2\BackEndAssignment-2\obj\Debug\net8.0\BackEndAssignment-2.pdb
 C:\Users\HIMANSHU\source\repos\BackEndAssignment-2\BackEndAssignment-2\obj\Debug\net8.0\BackEndAssignment-2.genruntimeconfig.cache
 C:\Users\HIMANSHU\source\repos\BackEndAssignment-2\BackEndAssignment-2\obj\Debug\net8.0\ref\BackEndAssignment-2.dll
+C:\Users\HIMANSHU\source\repos\BackEndAssignment-2\BackEndAssignment-2\obj\Debug\net8.0\BackEndAssignment-2.sourcelink.json

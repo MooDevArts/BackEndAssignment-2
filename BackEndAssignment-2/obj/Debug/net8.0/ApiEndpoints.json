@@ -1,12 +1,44 @@
 [
   {
     "ContainingType": "BackEndAssignment_2.Controllers.J1Controller",
-    "Method": "Get",
-    "RelativePath": "api/J1",
+    "Method": "getPoints",
+    "RelativePath": "api/J1/deliveroid",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "info",
+        "Type": "BackEndAssignment_2.Controllers.GameInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BackEndAssignment_2.Controllers.J2Controller",
+    "Method": "calcSpiciness",
+    "RelativePath": "api/J2/chilipeppers",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "ingredients",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.String",
