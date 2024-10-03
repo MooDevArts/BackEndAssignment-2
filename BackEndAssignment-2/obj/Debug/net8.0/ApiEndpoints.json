@@ -26,8 +26,34 @@
     ]
   },
   {
+    "ContainingType": "BackEndAssignment_2.Controllers.J1Controller",
+    "Method": "getSushiCost",
+    "RelativePath": "api/J1/sushi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "plates",
+        "Type": "BackEndAssignment_2.Controllers.PlateInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "BackEndAssignment_2.Controllers.J2Controller",
-    "Method": "calcSpiciness",
+    "Method": "CalcSpiciness",
     "RelativePath": "api/J2/chilipeppers",
     "HttpMethod": "GET",
     "IsController": true,
@@ -41,7 +67,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "System.Int32",
         "MediaTypes": [
           "text/plain",
           "application/json",
