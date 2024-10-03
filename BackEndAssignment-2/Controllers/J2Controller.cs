@@ -18,6 +18,19 @@ namespace BackEndAssignment_2.Controllers
             { "habanero", 125000 }
         };
 
+        /// <summary>
+        /// Calculates total spiciness based on the ingredients passed
+        /// </summary>
+        /// <returns>
+        /// Returns the total spiciness ( int )
+        /// </returns>
+        /// <param name="ingredients">
+        /// Contains the different chilli names
+        /// </param>
+        /// <example>
+        /// GET /api/j1/chillipeppers?ingredients=poblano,cayene,thai,poblano returns 118000
+        /// </example>
+
         [HttpGet(template: "chilipeppers")]
         public int CalcSpiciness([FromQuery] string ingredients)
         {
@@ -42,12 +55,52 @@ namespace BackEndAssignment_2.Controllers
                 else
                 {
                     // Handle the case where the ingredient is not found in the dictionary
-                    return 0;
+                    return -1;
                 }
             }
 
             // Return the total spiciness
             return totalSpice;
+        }
+
+        /// <summary>
+        /// Calculates size of the Dusa when he runs away - details attached in question image
+        /// </summary>
+        /// <returns>
+        /// Returns the size of Dusa when he ran away ( int )
+        /// </returns>
+        /// <param name="input">
+        /// Contains the different chilli names
+        /// </param>
+        /// <example>
+        /// GET /api/j1/chillipeppers?ingredients=5,3,2,9,20 returns 19
+        /// </example>
+
+        [HttpGet(template: "dusa-yobis")]
+
+        public int getSizeOfDuseOnExit([FromQuery] string input)
+        {
+            List<string> sizes = new List<string>(input.Split(','));
+            bool runAway = false;
+            int dusaSize = int.Parse(sizes[0]);
+
+            while(runAway == false)
+            {
+                for(int i = 1; i < sizes.Count; i++)
+                {
+                    if (int.Parse(sizes[i]) > dusaSize)
+                    {
+                        runAway = true;
+                        break;
+                    }
+                    else
+                    {
+                        dusaSize = dusaSize + int.Parse(sizes[i]);
+                    }
+                }
+            }
+
+            return dusaSize;
         }
     }
 }

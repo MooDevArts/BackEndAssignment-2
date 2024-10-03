@@ -78,6 +78,58 @@
     ]
   },
   {
+    "ContainingType": "BackEndAssignment_2.Controllers.J2Controller",
+    "Method": "getSizeOfDuseOnExit",
+    "RelativePath": "api/J2/dusa-yobis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BackEndAssignment_2.Controllers.J3Controller",
+    "Method": "bronzeScoreAndNumberofWinners",
+    "RelativePath": "api/J3/bronze",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "comp",
+        "Type": "BackEndAssignment_2.Controllers.CompInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "BackEndAssignment_2.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
